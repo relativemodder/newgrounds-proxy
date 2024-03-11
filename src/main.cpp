@@ -25,7 +25,8 @@ void proxySend(cocos2d::extension::CCHttpClient* self, cocos2d::extension::CCHtt
 	log::info("WOAH THE REQUEST URL IS {}", req->getUrl());
 
 	auto new_request_url = std::string(req->getUrl());
-	new_request_url = str_replace(new_request_url, "https://audio.ngfiles.com", "https://newgrounds.auby.pro");
+	new_request_url = str_replace(new_request_url, "audio.ngfiles.com", "newgrounds.auby.pro");
+	new_request_url = str_replace(new_request_url, "http://", "https://");
 
 	log::info("NEW REQUEST URL IS {}", new_request_url);
 
