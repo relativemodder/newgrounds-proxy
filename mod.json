@@ -9,5 +9,13 @@
 		"android": "*",
 		"win": "2.204"
 	},
-	"repository": "https://github.com/relativemodder/newgrounds-proxy"
+	"repository": "https://github.com/relativemodder/newgrounds-proxy",
+	"settings": {
+		"notification": {
+			"name": "Proxy Status Notification",
+			"description": "Enables the proxy status notification.",
+			"type": "bool",
+			"default": true
+		}
+	},
 }
