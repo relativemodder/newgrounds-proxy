@@ -14,7 +14,7 @@ class $modify(ProxyLevelInfoLayer, LevelInfoLayer) {
 			.text()
 			.then([](std::string const& result) {
 				log::debug("Proxy OK");
-				Notification::create(
+				if (Mod::get()->getSettingValue<bool>("notification")) Notification::create(
 					std::string("Newgrounds Proxy OK"), 
 					CCSprite::createWithSpriteFrameName("GJ_completesIcon_001.png")
 				)->show();

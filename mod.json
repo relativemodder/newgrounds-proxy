@@ -13,9 +13,9 @@
 	"settings": {
 		"notification": {
 			"name": "Proxy Status Notification",
-			"description": "Enables the proxy status notification.",
+			"description": "Enables the proxy status notification.\n(You'll still be notified of the proxy's errors regardless of this setting.)",
 			"type": "bool",
 			"default": true
 		}
-	},
+	}
 }
