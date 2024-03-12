@@ -14,10 +14,11 @@ class $modify(ProxyLevelInfoLayer, LevelInfoLayer) {
 			.text()
 			.then([](std::string const& result) {
 				log::debug("Proxy OK");
+				/*
 				Notification::create(
 					std::string("Newgrounds Proxy OK"), 
 					CCSprite::createWithSpriteFrameName("GJ_completesIcon_001.png")
-				)->show();
+				)->show();*/
 			})
 			.expect([](std::string const& error) {
 				log::error("Proxy ERROR: {}", error);
